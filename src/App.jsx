@@ -9,10 +9,10 @@ function App() {
   }, []);
 
   // modify rotation speed
-  function changeRotationSpeed(mod) {
+  function changeRotationSpeed(speedMod) {
     const currSpeed = getComputedStyle(document.documentElement).getPropertyValue("--rotation-speed");
     const parsed = parseFloat(currSpeed);
-    const newSpeed = String(parsed * mod + "s");
+    const newSpeed = String(parsed * speedMod + "s");
     document.documentElement.style.setProperty("--rotation-speed", newSpeed);
   }
 

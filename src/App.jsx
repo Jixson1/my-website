@@ -30,6 +30,7 @@ function App() {
       document.documentElement.style.setProperty("--background-color", "rgb(48, 48, 48)");
   }
 
+  // component html export
   return (
     <>
       <title>Jackson Buchmeyer</title>
@@ -42,8 +43,8 @@ function App() {
             <img src={heart} className="Heart-logo" alt="heart" />
           </p>
           <p>
-            <button onClick={() => changeRotationSpeed(0.5)}>Increase Speed</button>
-            <button onClick={() => changeRotationSpeed(2)}>Decrease Speed</button>
+            <button class="button button1" onClick={() => changeRotationSpeed(0.5)}>Increase Speed</button>
+            <button class="button button2" onClick={() => changeRotationSpeed(2)}>Decrease Speed</button>
           </p>
         </header>
       </div>

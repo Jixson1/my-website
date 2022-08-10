@@ -3,9 +3,3 @@ body {
     margin: 0;
     padding: 0;
 }
-
-:root {
-    --rotation-speed: 10s;
-    --size-logo: 40vmin;
-    --background-color: rgb(48, 48, 48);
-}

@@ -35,7 +35,11 @@ function App() {
     <>
       <title>Jackson Buchmeyer</title>
       <div className="App">
+        <header className="Top-menu">
+
+        </header>
         <header className="App-header">
+
           <p>
             <input type="range" name="size" min="0" max="100" defaultValue="40" onChange={handleOnSizeChange}></input>
           </p>

@@ -1,25 +1,18 @@
 import "./App.css";
-import heart from "./heart.png";
+
+import Menu from "./Menu.jsx";
 
 function App() {
 
-  // handle image click
-  function onLogoClick() {
-    console.log('Image clicked');
-  }
+  // implement cool intro logo spin animation thing (heart spins from center to top left)
 
   // component html export
   return (
     <>
       <title>Jackson Buchmeyer</title>
       <div className="App">
-        <header className="Top-menu">
-          <div onClick={onLogoClick} className="Heart-box">
-            <img src={heart} className="Heart-logo" alt="heart" />
-          </div>
-        </header>
+        <Menu />
         <header className="App-header">
-
         </header>
       </div>
     </>

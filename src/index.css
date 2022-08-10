@@ -3,3 +3,9 @@ body {
     margin: 0;
     padding: 0;
 }
+
+:root {
+    --background-color1: #494d5f;
+    --background-color2: #343241;
+    --button-hover-color: #676d86;
+}

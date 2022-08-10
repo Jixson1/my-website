@@ -1,6 +1,7 @@
 .Top-menu {
-    background-color: #494d5f;
-    height: 60px;
+    background-color: var(--background-color1);
+    --menu-height: 60px;
+    height: var(--menu-height);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -9,11 +10,20 @@
     border: none;
 }
 
-.Heart-logo-div {
+.Dropdown {
+    height: var(--menu-height);
+}
+
+.Links {
     padding-left: 1vh;
-    height: 55px;
+    height: var(--menu-height);
     border: none;
     padding-right: 1vh;
+    background-color: var(--background-color1);
+}
+
+.Links:hover {
+    background-color: var(--button-hover-color);
 }
 
 .Heart-logo {
@@ -22,16 +32,15 @@
 }
 
 .Name {
-    background-color: #494d5f;
+    background-color: var(--background-color1);
     color: white;
+    height: var(--menu-height);
     font-size: x-large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-radius: 30px;
     border: none;
-    padding: 1vh;
 }
 
 .Name:hover {
-    background-color: #343241;
+    background-color: var(--button-hover-color);
     color: white;
 }

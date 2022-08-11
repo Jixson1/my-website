@@ -1,5 +1,6 @@
 import "./App.css";
 import Menu from "./Menu.jsx";
+import nyanCat from "./images/nyan-cat.gif";
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
       <div className="App">
         <Menu />
         <header className="App-header">
-          <img src="./images/nyan-cat.gif" alt="Nyan Cat"/>
+          <img src={nyanCat} alt="Nyan Cat"/>
         </header>
       </div>
     </>

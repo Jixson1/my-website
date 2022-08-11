@@ -54,19 +54,3 @@
     transform: translateY(0px);
     pointer-events: auto;
 }
-
-.Name {
-    background-color: var(--background-color1);
-    color: white;
-    height: var(--menu-height);
-    font-size: x-large;
-    font-family: 'Lucida Sans';
-    border: none;
-    transition: all 150ms ease-in-out;
-}
-
-.Name:hover {
-    background-color: var(--button-hover-color);
-    color: white;
-    transform: scale(1.1);
-}

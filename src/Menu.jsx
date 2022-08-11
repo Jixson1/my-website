@@ -3,10 +3,6 @@ import heart from "./images/heart.png";
 
 function Menu() {
 
-  function onNameClick() {
-    console.log('Name button clicked');
-  }
-
   // handling dropdown menu
   document.addEventListener('click', e => {
     const isDropDownButton = e.target.matches('[data-dropdown-button]');
@@ -36,7 +32,6 @@ function Menu() {
             Dropdown Content
           </div>
         </div>
-        <button onClick={onNameClick} className="Name">Jackson Buchmeyer</button>
       </header>
     </>
   )

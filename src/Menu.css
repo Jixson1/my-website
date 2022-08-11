@@ -16,14 +16,17 @@
 
 .Links {
     padding-left: 1vh;
+    padding-right: 1vh;
     height: var(--menu-height);
     border: none;
-    padding-right: 1vh;
     background-color: var(--background-color1);
+    transition: all 150ms ease-in-out;
 }
 
+.Dropdown.active>.Links,
 .Links:hover {
     background-color: var(--button-hover-color);
+    transform: scale(1.1);
 }
 
 .Heart-logo {
@@ -31,16 +34,39 @@
     pointer-events: none;
 }
 
+.Dropdown-menu {
+    position: absolute;
+    left: 0;
+    background-color: var(--background-color1);
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 150ms ease-in-out;
+    font-family: 'Lucida Sans';
+    color: white;
+}
+
+.Dropdown.active>.Links+.Dropdown-menu {
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: auto;
+}
+
 .Name {
     background-color: var(--background-color1);
     color: white;
     height: var(--menu-height);
     font-size: x-large;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans';
     border: none;
+    transition: all 150ms ease-in-out;
 }
 
 .Name:hover {
     background-color: var(--button-hover-color);
     color: white;
+    transform: scale(1.1);
 }

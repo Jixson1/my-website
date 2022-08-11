@@ -32,6 +32,13 @@
 .Heart-logo {
     height: 100%;
     pointer-events: none;
+    animation: On-Load-Transition 1s linear;
+}
+
+@keyframes On-Load-Transition {
+    from {
+        transform: translate(2000px) rotate(360deg);
+    }
 }
 
 .Dropdown-menu {

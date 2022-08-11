@@ -12,6 +12,7 @@ function App() {
       <div className="App">
         <Menu />
         <header className="App-header">
+          <img src="./images/nyan-cat.gif" alt="Nyan Cat"/>
         </header>
       </div>
     </>

@@ -13,7 +13,7 @@ function App() {
       <div className="App">
         <Menu />
         <header className="App-header">
-          <img src={nyanCat} alt="Nyan Cat"/>
+          <img src={nyanCat} alt="Nyan Cat" className="Nyan-cat"/>
         </header>
       </div>
     </>

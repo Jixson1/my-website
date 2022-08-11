@@ -26,7 +26,7 @@ function Menu() {
       <header className="Top-menu">
         <div className="Dropdown" data-dropdown>
           <button className="Links" data-dropdown-button>
-            <img src={heart} className="Heart-logo" alt="heart" />
+            <img src={heart} alt="heart" className="Heart-logo"/>
           </button>
           <div className="Dropdown-menu">
             Dropdown Content

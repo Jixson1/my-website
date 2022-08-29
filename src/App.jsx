@@ -2,9 +2,7 @@ import "./App.css";
 import Menu from "./Menu.jsx";
 import nyanCat from "./images/nyan-cat.gif";
 
-function App() {
-
-  // implement cool intro logo spin animation thing (heart spins from center to top left)
+export default function App() {
 
   // component html export
   return (
@@ -19,5 +17,3 @@ function App() {
     </>
   );
 }
-
-export default App;

@@ -1,14 +1,14 @@
 import "./Menu.css";
 import heart from "./images/heart.png";
 
-function Menu() {
+export default function Menu() {
 
   // handling dropdown menu
   document.addEventListener('click', e => {
     const isDropDownButton = e.target.matches('[data-dropdown-button]');
     if (!isDropDownButton && e.target.closest('[data-dropdown]') != null) return;
     
-    let currentDropdown
+    let currentDropdown;
     if (isDropDownButton) {
         currentDropdown = e.target.closest('[data-dropdown]');
         currentDropdown.classList.toggle('active');
@@ -37,5 +37,3 @@ function Menu() {
   )
 
 }
-
-export default Menu;

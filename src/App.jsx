@@ -1,19 +1,30 @@
-import "./App.css";
-import Menu from "./Menu.jsx";
-import nyanCat from "./images/nyan-cat.gif";
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom';
+import Header from './Components/Header';
+import Home from './Views/Home';
+import About from './Views/About';
 
-export default function App() {
-
-  // component html export
+function App() {
   return (
-    <>
-      <title>Jackson Buchmeyer</title>
-      <div className="App">
-        <Menu />
-        <header className="App-header">
-          <img src={nyanCat} alt="Nyan Cat" className="Nyan-cat"/>
-        </header>
-      </div>
-    </>
+    <div>
+      <Router>
+
+        <Header />
+
+        <div className="p-3">
+          <Routes>
+            <Route exact path="/" element={<Home />}></Route>
+            <Route exact path="/about" element={<About />}></Route>
+          </Routes>
+        </div>
+
+      </Router>
+    </div>
   );
 }
+
+export default App;

@@ -1,2 +1,2 @@
 # Jackson Buchmeyer Website
-## Created using React
+## Created using React & Tailwind CSS

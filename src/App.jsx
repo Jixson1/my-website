@@ -8,6 +8,7 @@ import Header from './Components/Header';
 import Home from './Views/Home';
 import About from './Views/About';
 import Contact from './Views/Contact';
+import portrait from './assets/portrait.jpg';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
 
         <Header />
 
-        <div className="p-3">
+        <div className="flex justify-center p-10">
+          <img src={portrait} alt="Me" className="duration-200 hover:scale-110 hover:ease-in-out hover:bg-button-highlight-color w-96"></img>
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/about" element={<About />}></Route>
@@ -25,6 +27,7 @@ function App() {
         </div>
 
       </Router>
+
     </div>
   );
 }

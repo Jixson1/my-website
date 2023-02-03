@@ -27,8 +27,8 @@ function Navigation() {
 
   return (
     <nav>
-      <button className="hover:duration-100 hover:scale-110 hover:bg-button-highlight-color p-2" onClick={handleMenu}>
-        <img src={heart} alt="Menu" className="w-14 hover:scale-110"></img>
+      <button className="duration-100 hover:scale-110 hover:bg-zinc-800 p-2" onClick={handleMenu}>
+        <img src={heart} alt="Menu" className="w-14"></img>
       </button>
 
       {maskTransitions((style, item) => (

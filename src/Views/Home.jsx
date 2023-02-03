@@ -1,12 +1,31 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from 'react-router-dom';
+import portrait from '../assets/portrait.jpg';
 
 function Home() {
+
+  const [count, setCount] = useState(-1);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setCount(state => state + 1)
+  }, [location])
+
   return (
     <div>
-      <h1 className="font-bold text-2xl mb-3 text-white text-center">Home Sweet Home</h1>
-      <content>
-        
-      </content>
+      <div className="">
+        <h1 className="text-white text-5xl font-bold pl-5">
+          Jackson Buchmeyer
+          <p className="pt-10 text-xl text-violet-500">
+            Developer
+          </p>
+          <p>
+          {count}
+        </p>
+        </h1>
+
+      </div>
     </div>
   )
 }

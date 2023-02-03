@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useTransition, animated } from '@react-spring/web';
 import NavigationMenu from './NavigationMenu';
-import heart from '../assets/favicon.png'
+import heart from '../assets/favicon.png';
 
 function Navigation() {
   const [showMenu, setShowMenu] = useState(false);
@@ -46,7 +46,7 @@ function Navigation() {
         item ?
           <animated.div
             style={style}
-            className="fixed bg-header-background top-0 left-0 w-1/5 h-full z-50 shadow"
+            className="fixed bg-zinc-700 top-0 left-0 w-fit h-full z-50 shadow"
           >
             <NavigationMenu closeMenu={handleMenu}/>
           </animated.div>

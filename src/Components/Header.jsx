@@ -3,8 +3,8 @@ import Navigation from './Navigation';
 
 function Header() {
   return (
-    <header className="bg-header-background">
-      <div className="object-fill">
+    <header className=" bg-zinc-700">
+      <div>
         <Navigation />
       </div>
     </header>

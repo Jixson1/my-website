@@ -1,29 +1,50 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHouse, faCircleUser, faPhone } from '@fortawesome/free-solid-svg-icons';
+import heart from '../assets/favicon.png';
 
 function NavigationMenu(props) {
   return (
     <div>
-      <div className="font-bold px-3 py-3 text-white">
-        Menu
-      </div>
-      <ul>
+      <button className="hover:duration-100 hover:scale-110 hover:bg-button-highlight-color p-2" onClick={props.closeMenu}>
+        <img src={heart} alt="Menu" className="w-14 hover:scale-110"></img>
+      </button>
+      <ul className="text-center">
         <li>
           <Link
             to="/"
-            className="text-white px-3 py-3 border-t border-b block"
+            className="hover:duration-100 hover:scale-110 hover:bg-button-highlight-color text-white px-3 py-3 block"
             onClick={props.closeMenu}
           >
-            Home
+            <FontAwesomeIcon
+            icon={faHouse}
+            className="text-3xl text-violet-500"
+            />
           </Link>
         </li>
         <li>
           <Link
             to="/about"
-            className="text-white px-3 py-3 border-b block"
+            className="hover:duration-100 hover:scale-110 hover:bg-button-highlight-color text-white px-3 py-3 block"
             onClick={props.closeMenu}
           >
-            About
+            <FontAwesomeIcon
+            icon={faCircleUser}
+            className="text-3xl text-violet-500"
+            />
+          </Link>
+        </li>
+        <li>
+          <Link
+            to="/contact"
+            className="hover:duration-100 hover:scale-110 hover:bg-button-highlight-color text-white px-3 py-3 block"
+            onClick={props.closeMenu}
+          >
+            <FontAwesomeIcon
+            icon={faPhone}
+            className="text-3xl text-violet-500"
+            />
           </Link>
         </li>
       </ul>

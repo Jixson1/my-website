@@ -27,7 +27,7 @@ function Navigation() {
 
   return (
     <nav>
-      <button className="duration-100 hover:scale-110 hover:bg-zinc-800 p-2" onClick={handleMenu}>
+      <button className="duration-100 hover:scale-110 hover:bg-zinc-800 p-1" onClick={handleMenu}>
         <img src={heart} alt="Menu" className="w-14"></img>
       </button>
 
@@ -46,7 +46,7 @@ function Navigation() {
         item ?
           <animated.div
             style={style}
-            className="fixed bg-zinc-700 top-0 left-0 w-fit h-full z-50 shadow"
+            className=" top-0 left-0 w-fit h-full z-50 shadow fixed bg-zinc-700"
           >
             <NavigationMenu closeMenu={handleMenu}/>
           </animated.div>

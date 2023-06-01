@@ -12,13 +12,13 @@ import portrait from './assets/portrait.jpg';
 
 function App() {
   return (
-    <div>
+    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-b from-zinc-900 to-violet-900 inline-flex">
+      
       <Router>
 
         <Header />
 
-        <div className="flex justify-center p-10">
-          <img src={portrait} alt="Me" className="duration-200 hover:scale-110 hover:ease-in-out hover:bg-button-highlight-color w-96"></img>
+        <div className="relative">
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
             <Route exact path="/about" element={<About />}></Route>

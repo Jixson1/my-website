@@ -23,30 +23,6 @@ function NavigationMenu(props) {
             />
           </Link>
         </li>
-        <li>
-          <Link
-            to="/about"
-            className="hover:duration-100 hover:scale-110 hover:bg-zinc-800 px-3 py-3 block text-violet-600 hover:text-violet-700"
-            onClick={props.closeMenu}
-          >
-            <FontAwesomeIcon
-            icon={faCircleUser}
-            className="text-3xl"
-            />
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/contact"
-            className="hover:duration-100 hover:scale-110 hover:bg-zinc-800 px-3 py-3 block text-violet-600 hover:text-violet-700"
-            onClick={props.closeMenu}
-          >
-            <FontAwesomeIcon
-            icon={faPhone}
-            className="text-3xl"
-            />
-          </Link>
-        </li>
       </ul>
     </div>
   )

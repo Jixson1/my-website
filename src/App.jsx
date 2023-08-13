@@ -6,8 +6,6 @@ import {
 } from 'react-router-dom';
 import Header from './Components/Header';
 import Home from './Views/Home';
-import About from './Views/About';
-import Contact from './Views/Contact';
 import portrait from './assets/portrait.jpg';
 
 function App() {
@@ -21,8 +19,6 @@ function App() {
         <div className="relative">
           <Routes>
             <Route exact path="/" element={<Home />}></Route>
-            <Route exact path="/about" element={<About />}></Route>
-            <Route exact path="/contact" element={<Contact />}></Route>
           </Routes>
         </div>
 

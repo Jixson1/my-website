@@ -10,7 +10,7 @@ import portrait from './assets/portrait.jpg';
 
 function App() {
   return (
-    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-b from-zinc-900 to-violet-900 inline-flex">
+    <div className="absolute bottom-0 left-0 h-full w-full bg-zinc-900 inline-flex">
       
       <Router>
 

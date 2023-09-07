@@ -4,9 +4,6 @@ import {
   Routes,
   Route
 } from 'react-router-dom';
-import Header from './Components/Header';
-import Home from './Views/Home';
-import portrait from './assets/portrait.jpg';
 
 function App() {
   return (
@@ -14,11 +11,8 @@ function App() {
       
       <Router>
 
-        <Header />
-
         <div className="relative">
           <Routes>
-            <Route exact path="/" element={<Home />}></Route>
           </Routes>
         </div>
 
